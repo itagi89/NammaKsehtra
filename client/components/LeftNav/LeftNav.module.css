@@ -1,0 +1,87 @@
+.nav{
+    height: 100vh;
+}
+
+/* Sidebar Container */
+.sidebar {
+    width: 150px;
+    height: 100vh;
+    background-color: #3366ff;
+    padding-top: 15px;
+    transition: width 0.3s ease-in-out;
+    &.collapsed{
+        width:50px
+    }
+}
+
+/* Brand Name */
+.brand {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Menu Button */
+.menubtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: block;
+}
+
+/* Menu Items */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menu li i {
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.menu li span {
+    font-size: 14px;
+}
+
+.menu li:hover {
+    background-color: #264dff;
+}
+
+/* Sidebar Collapsed State */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed .brand,
+.sidebar.collapsed .menu li span {
+    display: none;
+}
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    text-decoration: none;
+    color: inherit; /* Keep text color consistent */
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+  }
+  .icon {
+    font-size: 20px; /* Fix icon size */
+    min-width: 24px; /* Ensures icons are always visible */
+  }
+  
