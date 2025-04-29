@@ -1,0 +1,6 @@
+.main-content{
+  display: flex;
+  .content{
+      width:100%
+  }
+}
